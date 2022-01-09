@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/color_background">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/workshop"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/login"
+        android:textSize="40sp"
+        android:layout_below="@+id/logo"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/color_primary_dark"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inp_username_"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/text"
+        android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:textColorHint="#F2F5FF"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawableTint="@color/white"
+        android:drawablePadding="10dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inp_password_"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/inp_username_"
+        android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/password"
+        android:textColorHint="#F2F5FF"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_baseline_lock"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"/>
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_marginTop="20dp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inp_password_"
+        android:background="@drawable/style_button"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textColor="#F2F5FF"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp"/>
+
+    <TextView
+        android:id="@+id/text_dont_"
+        android:layout_below="@+id/btn_signin"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="don't have an account?"
+        android:textSize="18sp"
+        android:textColor="@color/color_primary_dark"/>
+
+    <TextView
+        android:id="@+id/txt_regester_here"
+        android:layout_below="@+id/text_dont_"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/register_here"
+        android:textSize="17sp"
+        android:textColor="#009AFF"/>
+
+    <TextView
+        android:id="@+id/txt_cont_without_login"
+        android:layout_below="@+id/txt_regester_here"
+        android:layout_marginTop="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/or_continue_without_login"
+        android:textSize="17sp"
+        android:textColor="#009AFF"/>
+
+</RelativeLayout>

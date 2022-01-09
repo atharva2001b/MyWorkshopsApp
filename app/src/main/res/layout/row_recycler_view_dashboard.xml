@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="172dp"
+    android:id="@+id/rv_row_dashboard">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <ImageView
+                android:id="@+id/rv_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="fitCenter"
+                android:padding="2dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/rv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="20dp"
+                    android:text="@string/ros_workshop"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rv_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingTop="5dp"
+                    android:text="@string/this_workshop_concenterates_on_various_robotic_applications_of_engineering_concepts"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/rv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/_4500rs"
+                        android:textColor="#449E65" />
+
+                    <Button
+                        android:id="@+id/rv_btn_apply"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/style_button"
+                        android:text="@string/apply"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

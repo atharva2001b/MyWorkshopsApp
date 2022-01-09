@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegisterActivity"
+        android:background="@color/color_background">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/workshop"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Register"
+        android:textColor="@color/color_primary_dark"
+        android:textSize="35sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp_name"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/text"
+            android:backgroundTint="@color/white"
+            android:layout_centerHorizontal="true"
+            android:hint="Name"
+            android:inputType="text"
+            android:textColorHint="#F2F5FF"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawableTint="@color/white"
+            android:drawablePadding="10dp"/>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inp_username"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/inp_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColorHint="#F2F5FF" />
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp_password"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/inp_username"
+            android:backgroundTint="@color/white"
+            android:layout_centerHorizontal="true"
+            android:hint="password"
+            android:textColorHint="#F2F5FF"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_baseline_lock"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/white"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inp_conf_pass"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/inp_password"
+        android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:hint="confirm password"
+        android:textColorHint="#F2F5FF"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_baseline_lock"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_marginTop="20dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inp_conf_pass"
+            android:background="@drawable/style_button"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="#F2F5FF"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"/>
+    <TextView
+        android:id="@+id/txt_back_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back to Login"
+        android:layout_below="@+id/btn_register"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/color_primary_dark"/>
+
+
+</RelativeLayout>
