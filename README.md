@@ -1,46 +1,26 @@
+
+
+
 # MyWorkshops
-an app to browse and apply to workshop or courses..
+
+## Problem Statement:
+As the Education firm providing courses scales it becomes harder for them to manage course database that they offer and also which students have opted for various courses. It becomes very inconvinient when it comes to datastorage in terms of hard copies or even thousand excel sheets as per courses they offer.
+If a student wants to apply to other courses then too it becomes hectic! as he needs to fill all the paperwork just to apply.
+
+## Solution
+This app is for supporting macro-level education instututes. These instututes can track students who have opted for varied courses. This app will manage the database and has login system for students. It will make most of the database online and thusly educational institutes at macro-scale wont need to manage all the database over huge pile of hard copies! 
+It is also a platform for promotion of new courses! so once education institutes have new courses they can have them here. Interested students can therby directly apply.
 
 
-
-### It features
-- Login and register
-- available workshops' browsing
-- Dashboard - to view existing registered workshops
-- It supports multiple users and uses SQLite database to keep track of their data
-- Smooth, user friendly UX and UI (smooth, using time delayed algorithms and Coroutines)
-
-
-### highlighting use of android features like
-- SQlite(Room) Database
+### highlighting use of Kotlin features like
+- Room Database
 - Kotlin Coroutines
-- Activities, fragments
-- Shared Prefrences
+- Activities, fragments, View Models
+- Live Data
 
 # APP
 
-## Login & Register
-- login allows existing users to Sign into their account and Register alows new users to Sign up for services
-
-
-<p align="center"><img src="app/Images/Logins.jpg" alt="Login page Image" width="300" height="600"/>    <img src="app/Images/Register.jpg" alt="register page Image" width="300" height="600"/></p>
-
-
-## Navigation
-- Navigation drawer for easy access of services
-<p align="center"><img src="app/Images/Navigation%20Panel.jpg" alt="navigation page Image" width="300" height="600"/></p>
-
-
-## Workshops and subcribed Workshops(Dashboard)
-- Shows available workshops to all users and Dashboard to existing users
-<p align="center"><img src="app/Images/Available _Workshops.jpg" alt="Workshops page Image" width="300" height="600"/>    <img src="app/Images/Applied_Workshops.jpg" alt="Workshops page Image" width="300" height="600"/></p>
-
-
-
-## Alert Features
-- Uses alert dialoguebox in many situations
-<p align="center"><img src="app/Images/alert_access_dashboard.jpg" alt="alert access dashboard Image" width="300" height="600"/>    <img src="app/Images/alert_add_course.jpg" alt="alert add course Image" width="300" height="600"/>    <img src="app/Images/alert_logout.jpg" alt="logout alert Image" width="300" height="600"/></p>
-
+<p align="center"><img src="app/Images/Screenshot%202022-01-09%20at%204.34.39%20PM.png" alt="Whole app screens images" width="1340" height="950"/> 
 
 ### ---Done--
 
