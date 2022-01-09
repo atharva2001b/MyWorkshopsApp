@@ -17,8 +17,9 @@ It is also a platform for promotion of new courses! so once education institutes
 ### highlighting use of Kotlin features like
 - Room Database
 - Kotlin Coroutines
-- Activities, fragments, View Models
-- Live Data
+- Activities
+- Fragments
+- Animations
 
 # APP
 
